@@ -8,8 +8,8 @@
         <div class="bg-white w-full p-6 rounded-lg ">
             <div class="rounded-lg font-sans">
                 @foreach ($experiences as $experience)
-                    <div class="py-6 flex justify-center border-b border-[rgba(214,214,214,0.7)]">
-                        <div class="flex w-5/12 grid grid-rows-2 grid-flow-col gap-4 justify-end text-right">
+                    <div class="py-6 flex grid grid-cols-3 justify-center border-b border-[rgba(214,214,214,0.7)]">
+                        <div class="flex grid grid-rows-2 grid-flow-col gap-4 justify-end text-right">
                             <div>
                                 <h1 class="font-semibold text-blue-900">{{$experience->title}}</h1>
                             </div>
@@ -17,10 +17,10 @@
                                 <h2 class="text-blue-900">From {{$experience->start}} to {{$experience->end}}</h2>
                             </div>
                         </div>
-                        <div class="flex w-1/12 justify-center">
+                        <div class="flex justify-center">
                             <svg class="w-6 h-6" fill="none" stroke="darkBlue" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"></path></svg>
                         </div>
-                        <div class="flex w-6/12 grid grid-rows-3 grid-flow-col gap-4 justify-start text-left">
+                        <div class="flex grid grid-rows-3 grid-flow-col gap-4 justify-start text-left">
                             <div class="flex">
                                 <h1 class="text-blue-900">{{$experience->worked_at}}</h1>
                             </div>

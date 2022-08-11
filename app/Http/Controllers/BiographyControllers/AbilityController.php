@@ -17,7 +17,7 @@ class AbilityController extends Controller
     public function index()
     {
         $biography = Biography::all()->where('id','=', '1')->first();
-        $abilities = Ability::latest()->paginate(6);
+        $abilities = Ability::latest()->paginate(8);
 
         return view('abilities',[
             'abilities' => $abilities,

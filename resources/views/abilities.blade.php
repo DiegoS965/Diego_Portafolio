@@ -2,14 +2,14 @@
 
 @section('content')
     <div class="py-8 flex justify-center font-sans">
-        <h1 class="font-semibold text-blue-900 text-5xl font-medium mb-4">Abilities</h1>
+        <h1 class="font-semibold text-blue-900 text-5xl font-medium mb-4">Abilities and Skills</h1>
     </div>
     <div class=" py-8  w-full flex justify-between">
         <div class="bg-white w-full p-6 rounded-lg ">
             <div class="rounded-lg font-sans">
                 <div class="py-6 grid grid-rows-3 grid-cols-2 gap-4 flex justify-center border-b border-[rgba(214,214,214,0.7)]">
                     @foreach ($abilities as $ability)
-                        <div class="justify-center">
+                        <div class="grid place-content-center">
                             <ul class="list-disc">
                                 <li>{{$ability->ability}}</li>
                             </ul>
