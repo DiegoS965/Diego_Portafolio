@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   @vite('resources/css/app.css')
-  <link rel="icon" type="image/x-icon" href="../favicon_diego.ico">
+  <link rel="icon" type="image/x-icon" href="../Diego_logo.ico">
   <title>Diego Sandoval</title>
 </head>
 <body class= "flex flex-col h-screen ">
@@ -62,13 +62,13 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="flex items-center justify-center " hidden>
+                                <!--<div class="flex items-center justify-center " hidden>
                                     <div class="relative px-6 ">
                                         <a class="text-inherit " href="{{route("register")}}">
                                         <div class="relative text-base leading-6  font-[350] text-[rgba(45,45,45,1)]">Register</div>
                                         </a>
                                     </div>
-                                </div>
+                                </div>-->
                             @endguest
                             @auth
                                 <div class="flex items-center justify-center ">
@@ -94,6 +94,6 @@
     <footer class="flex mb-0 mb-0 p-4 bg-black text-white shadow">
         <span class="text-sm sm:text-center dark:text-gray-400 px-10">© 2022 by Diego Sandoval. All Rights Reserved.</span>
     </footer>
-    <script src="../path/to/flowbite/dist/flowbite.js"></script>
+    <script src="https://unpkg.com/flowbite@1.5.2/dist/flowbite.js"></script>
 </body>
 </html>

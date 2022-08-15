@@ -16,9 +16,8 @@ return new class extends Migration
         Schema::create('images', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->foreignId('biography_id')->constrained()->onDelete('cascade');
-            $table->string('image')->nullable();
-            $table->integer('created_by')->nullable();
+            $table->foreignId('project_id')->constrained()->onDelete('cascade');
+            $table->string('url')->nullable();
             $table->integer('updated_by')->nullable();
             $table->softDeletes();
         });
