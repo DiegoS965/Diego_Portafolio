@@ -36,7 +36,7 @@
             </div>
         </div>
         <div class="w-4/12 p-6 rounded-lg">
-            <img src="../images/photo.png" class="object-scale-down rounded-lg">
+            <img src="../images/photo.PNG" class="object-scale-down rounded-lg">
         </div>
     </div>
 
